@@ -1,0 +1,457 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.app-light {
+  background-color: white;
+}
+
+.sidebar-light {
+  background-color: white;
+  color: #0e0e0e;
+  box-shadow: 0 15px 100px 35px #a8a8a85b;
+  border-right: 1px solid #ececec;
+}
+.sidebar-light button {
+  color: #0e0e0e;
+}
+
+.items-list-light {
+  background-color: white;
+  border: 1px solid #cececea9;
+}
+
+.details-light {
+  color: #0e0e0e;
+}
+.details-light .preview-lg,
+.details-light .preview-sm {
+  border: 1px solid #cececea9;
+}
+.details-light button {
+  color: #0e0e0e;
+}
+
+.cart-light {
+  color: #0e0e0e;
+}
+.cart-light .item-list {
+  border: 1px solid #cececea9;
+}
+.cart-light .item-list li {
+  border-bottom: 1px solid #cececea9;
+}
+.cart-light .item-list img {
+  border: 1px solid #cececea9;
+}
+.cart-light .item-list button {
+  color: #0e0e0e;
+}
+.cart-light button {
+  color: #0e0e0e;
+}
+
+.preferences-light {
+  color: #0e0e0e;
+}
+.preferences-light select {
+  color: #0e0e0e;
+}
+.preferences-light select option {
+  background: white;
+}
+.preferences-light button {
+  color: #0e0e0e;
+}
+
+.button-back-light {
+  color: #0e0e0e;
+}
+
+.app-dark {
+  background-color: #414141;
+}
+
+.sidebar-dark {
+  background-color: #222222;
+  color: white;
+  box-shadow: 0 15px 100px 35px #222222;
+  border-right: 1px solid #222222a9;
+}
+.sidebar-dark #logo {
+  filter: invert(1);
+}
+.sidebar-dark button {
+  color: white;
+}
+
+.items-list-dark {
+  background-color: #525252;
+  border: 1px solid #2c2c2c;
+}
+
+.details-dark {
+  color: white;
+}
+.details-dark .preview-lg,
+.details-dark .preview-sm {
+  border: 1px solid #747373;
+}
+.details-dark button {
+  color: white;
+}
+
+.cart-dark {
+  color: white;
+}
+.cart-dark .item-list {
+  border: 1px solid #777777;
+}
+.cart-dark .item-list li {
+  border-bottom: 1px solid #777777;
+}
+.cart-dark .item-list img {
+  border: 1px solid #777777;
+}
+.cart-dark .item-list button {
+  color: white;
+}
+.cart-dark button {
+  color: white;
+}
+
+.preferences-dark {
+  color: white;
+}
+.preferences-dark select {
+  color: white;
+}
+.preferences-dark select option {
+  background: #222222;
+}
+.preferences-dark button {
+  color: white;
+}
+
+.button-back-dark {
+  color: white;
+}
+
+.btn-outline, #app #content .preferences form select, #app #content .preferences form, #app #content .cart, #app #content .details #details-group .details-item, #app .sidebar button, #app .sidebar #menu label {
+  font-family: "Julius Sans One", Arial, sans-serif;
+}
+
+body,
+html,
+#root {
+  height: 100%;
+}
+
+#app {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  height: 100%;
+  width: 100%;
+}
+#app .sidebar {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  grid-area: 1/1/12 span/2 span;
+}
+#app .sidebar #logo {
+  width: 80%;
+  height: auto;
+}
+#app .sidebar #menu {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+#app .sidebar #menu label {
+  font-size: 2vw;
+  transition-property: transform, color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  margin: 1vh 0;
+}
+#app .sidebar #menu label:hover {
+  transform: scale(1.2);
+  color: #27d6bf;
+}
+#app .sidebar #menu input {
+  display: none;
+}
+#app .sidebar #menu input:checked + label {
+  transform: scale(1.2);
+  color: #27d6bf;
+}
+#app .sidebar button {
+  font-size: 1.3vw;
+  margin-left: 1vw;
+}
+#app .sidebar button:disabled {
+  color: #808080;
+}
+#app #content {
+  grid-area: 1/3/12 span/10 span;
+}
+#app #content .items-list {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+#app #content .items-list li {
+  width: 25%;
+  height: 25%;
+  margin: 1vh 1vw;
+  border-radius: 5px;
+  position: relative;
+  transition: transform 0.5s ease;
+}
+#app #content .items-list li:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px 10px #15ffcc62;
+  z-index: 2;
+}
+#app #content .items-list li img {
+  height: 100%;
+  width: 100%;
+}
+#app #content .details {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  height: 100%;
+  width: 100%;
+}
+#app #content .details .button-back {
+  grid-area: 2/1/1 span/1 span;
+}
+#app #content .details #details-group {
+  grid-area: 4/2/7 span/8 span;
+  display: flex;
+}
+#app #content .details #details-group .preview {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-right: 2vw;
+}
+#app #content .details #details-group .preview .preview-lg {
+  height: 70%;
+  width: 95%;
+  margin-bottom: 1vh;
+}
+#app #content .details #details-group .preview .preview-lg img {
+  height: 100%;
+  width: 100%;
+}
+#app #content .details #details-group .preview .preview-sm {
+  height: 10%;
+  width: 15%;
+  margin: 0 0.5vw;
+}
+#app #content .details #details-group .preview .preview-sm img {
+  height: 100%;
+  width: 100%;
+}
+#app #content .details #details-group .details-item {
+  width: 100%;
+  height: 85%;
+  margin: auto 0;
+}
+#app #content .details #details-group .details-item h1 {
+  font-size: 3vw;
+}
+#app #content .details #details-group .details-item .stars {
+  font-size: 2vw;
+  margin: 1.5vh 0;
+}
+#app #content .details #details-group .details-item #price {
+  font-size: 1.5vw;
+  margin: 1vh 0;
+}
+#app #content .details #details-group .details-item .description {
+  font-size: 1.5vw;
+  height: 55%;
+  overflow: scroll;
+}
+#app #content .details #details-group .details-item .description::-webkit-scrollbar {
+  display: none;
+}
+#app #content .details #details-group .details-item button {
+  margin-top: 2vh;
+}
+#app #content .cart {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+}
+#app #content .cart .button-back {
+  grid-area: 2/1/1 span/1 span;
+}
+#app #content .cart .order {
+  grid-area: 11/2/1 span/7 span;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#app #content .cart .order span {
+  font-size: 2vw;
+}
+#app #content .cart .item-list {
+  grid-area: 3/2/8 span/7 span;
+  overflow-y: scroll;
+}
+#app #content .cart .item-list::-webkit-scrollbar {
+  display: none;
+}
+#app #content .cart .item-list .item {
+  height: 20%;
+  width: auto;
+  padding: 1vh;
+  position: relative;
+}
+#app #content .cart .item-list .item img {
+  height: 100%;
+  width: auto;
+  float: left;
+  margin-right: 1vw;
+}
+#app #content .cart .item-list .item h4 {
+  font-size: 1.5vw;
+  margin-bottom: 1vh;
+}
+#app #content .cart .item-list .item div {
+  font-size: 1.3vw;
+}
+#app #content .cart .item-list .item button {
+  position: absolute;
+  font-size: 3vw;
+  width: 10%;
+  height: 30%;
+  top: 0;
+  right: 0;
+}
+#app #content .preferences {
+  height: 100%;
+}
+#app #content .preferences .button-back {
+  margin: 10vh 3vw;
+}
+#app #content .preferences form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vw;
+}
+#app #content .preferences form select {
+  background: none;
+  border-radius: 5px;
+  padding: 0.5vh 0.5vw;
+  outline: none;
+  margin: 3vh;
+}
+
+.btn-outline {
+  border: 2px solid #0fccd3;
+  padding: 1vh 1vw;
+  font-size: 1.5vw;
+  transition: 0.2s transform ease;
+}
+.btn-outline:active {
+  transform: scale(1.1);
+}
+
+.button-back {
+  font-size: 3vw;
+}
+
+@media only screen and (max-width: 1050px) {
+  #app #content .items-list li {
+    width: 25%;
+    height: 20%;
+  }
+  #app #content #details #details-group {
+    grid-area: 2/2/12 span/8 span;
+    flex-direction: column;
+  }
+  #app #content #details #details-group .preview {
+    height: 60%;
+  }
+  #app #content #details #details-group .preview .preview-sm {
+    width: 13%;
+  }
+  #app #content #details #details-group .details-item {
+    height: 40%;
+  }
+  #app #content #details #details-group .details-item .description {
+    height: 30%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #app .sidebar {
+    grid-area: 1/1/1 span/12 span;
+    flex-direction: row;
+    height: auto;
+  }
+  #app .sidebar #logo {
+    height: 100%;
+    width: 10%;
+  }
+  #app .sidebar #menu {
+    flex-direction: row;
+  }
+  #app .sidebar #menu label {
+    font-size: 2.5vw;
+    margin: 0 1.5vw;
+  }
+  #app .sidebar button {
+    font-size: 2vw;
+  }
+  #app #content {
+    grid-area: 2/1/11 span/12 span;
+  }
+  #app #content .items-list li {
+    height: 25%;
+    width: 30%;
+  }
+  #app #content .button-back {
+    grid-area: 1/1/auto/auto;
+  }
+  #app #content #details .button-back {
+    grid-area: 1/1/1 span/1 span;
+  }
+  #app #content #details #details-group {
+    grid-area: 2/2/11 span/8 span;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

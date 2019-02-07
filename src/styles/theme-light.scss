@@ -1,0 +1,76 @@
+.app-light {
+  background-color: $app-light;
+}
+
+.sidebar-light {
+  background-color: $sidebar-light;
+  color: $sidebar-text-light;
+  box-shadow: 0 15px 100px 35px $sidebar-shadow-light;
+  border-right: 1px solid $sidebar-border-light;
+
+  button {
+    color: $sidebar-text-light;
+  }
+}
+
+.items-list-light {
+  background-color: $items-list-light;
+  border: 1px solid $items-list-border-light;
+}
+
+.details-light {
+  color: $details-text-light;
+
+  .preview-lg,
+  .preview-sm {
+    border: 1px solid $details-border-light;
+  }
+
+  button {
+    color: $button-light;
+  }
+}
+
+.cart-light {
+  color: $cart-text-light;
+
+  .item-list {
+    border: 1px solid $item-border-light;
+
+    li {
+      border-bottom: 1px solid $item-border-light;
+    }
+
+    img {
+      border: 1px solid $item-border-light;
+    }
+
+    button {
+      color: $cart-text-light;
+    }
+  }
+
+  button {
+    color: $button-light;
+  }
+}
+
+.preferences-light {
+  color: $pref-text-light;
+
+  select {
+    color: $pref-text-light;
+
+    option {
+      background: $pref-option-light;
+    }
+  }
+
+  button {
+    color: $pref-text-light;
+  }
+}
+
+.button-back-light {
+  color: $button-back-light;
+}

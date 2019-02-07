@@ -1,0 +1,79 @@
+.app-dark {
+  background-color: $app-dark;
+}
+
+.sidebar-dark {
+  background-color: $sidebar-dark;
+  color: $sidebar-text-dark;
+  box-shadow: 0 15px 100px 35px $sidebar-shadow-dark;
+  border-right: 1px solid $sidebar-border-dark;
+
+  #logo {
+    filter: invert(1);
+  }
+
+  button {
+    color: $sidebar-text-dark;
+  }
+}
+
+.items-list-dark {
+  background-color: $items-list-dark;
+  border: 1px solid $items-list-border-dark;
+}
+
+.details-dark {
+  color: $details-text-dark;
+
+  .preview-lg,
+  .preview-sm {
+    border: 1px solid $details-border-dark;
+  }
+
+  button {
+    color: $button-dark;
+  }
+}
+
+.cart-dark {
+  color: $cart-text-dark;
+  .item-list {
+    border: 1px solid $item-border-dark;
+
+    li {
+      border-bottom: 1px solid $item-border-dark;
+    }
+
+    img {
+      border: 1px solid $item-border-dark;
+    }
+
+    button {
+      color: $cart-text-dark;
+    }
+  }
+
+  button {
+    color: $button-dark;
+  }
+}
+
+.preferences-dark {
+  color: $pref-text-dark;
+
+  select {
+    color: $pref-text-dark;
+
+    option {
+      background: $pref-option-dark;
+    }
+  }
+
+  button {
+    color: $pref-text-dark;
+  }
+}
+
+.button-back-dark {
+  color: $button-back-dark;
+}
