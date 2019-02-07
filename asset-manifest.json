@@ -1,13 +1,13 @@
 {
-  "main.css": "/bodiavaleur/diamond/static/css/main.ec0104d5.chunk.css",
-  "main.js": "/bodiavaleur/diamond/static/js/main.668bde0d.chunk.js",
-  "main.js.map": "/bodiavaleur/diamond/static/js/main.668bde0d.chunk.js.map",
-  "static/js/1.f370b753.chunk.js": "/bodiavaleur/diamond/static/js/1.f370b753.chunk.js",
-  "static/js/1.f370b753.chunk.js.map": "/bodiavaleur/diamond/static/js/1.f370b753.chunk.js.map",
-  "runtime~main.js": "/bodiavaleur/diamond/static/js/runtime~main.681a90d8.js",
-  "runtime~main.js.map": "/bodiavaleur/diamond/static/js/runtime~main.681a90d8.js.map",
-  "static/css/main.ec0104d5.chunk.css.map": "/bodiavaleur/diamond/static/css/main.ec0104d5.chunk.css.map",
-  "index.html": "/bodiavaleur/diamond/index.html",
-  "precache-manifest.46cfa2f00370a38e0a2cf3bdd5fbdd83.js": "/bodiavaleur/diamond/precache-manifest.46cfa2f00370a38e0a2cf3bdd5fbdd83.js",
-  "service-worker.js": "/bodiavaleur/diamond/service-worker.js"
+  "main.css": "/diamond/static/css/main.ec0104d5.chunk.css",
+  "main.js": "/diamond/static/js/main.668bde0d.chunk.js",
+  "main.js.map": "/diamond/static/js/main.668bde0d.chunk.js.map",
+  "static/js/1.f370b753.chunk.js": "/diamond/static/js/1.f370b753.chunk.js",
+  "static/js/1.f370b753.chunk.js.map": "/diamond/static/js/1.f370b753.chunk.js.map",
+  "runtime~main.js": "/diamond/static/js/runtime~main.92053eee.js",
+  "runtime~main.js.map": "/diamond/static/js/runtime~main.92053eee.js.map",
+  "static/css/main.ec0104d5.chunk.css.map": "/diamond/static/css/main.ec0104d5.chunk.css.map",
+  "index.html": "/diamond/index.html",
+  "precache-manifest.30c436feddd1984b8e808f2b2d6c694d.js": "/diamond/precache-manifest.30c436feddd1984b8e808f2b2d6c694d.js",
+  "service-worker.js": "/diamond/service-worker.js"
 }

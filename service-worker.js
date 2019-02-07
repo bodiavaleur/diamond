@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/bodiavaleur/diamond/precache-manifest.46cfa2f00370a38e0a2cf3bdd5fbdd83.js"
+  "/diamond/precache-manifest.30c436feddd1984b8e808f2b2d6c694d.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/bodiavaleur/diamond/index.html", {
+workbox.routing.registerNavigationRoute("/diamond/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
