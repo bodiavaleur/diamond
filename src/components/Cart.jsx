@@ -7,14 +7,14 @@ export default class Cart extends Component {
     this.state = { cartItems: this.props.cartItems };
   }
   getItems() {
-    return this.state.cartItems.map(item => {
+    return this.state.cartItems.map((item, idx) => {
       const convertedPrice = this.props.currency(item.price);
       return (
         <li className='item'>
           <img src={item.preview[0]} alt={item.name} />
           <h4>{item.name}</h4>
           <div>{convertedPrice.sign + convertedPrice.price}</div>
-          <button onClick={() => this.removeItem(this.state.cartItems, item)}>
+          <button onClick={() => this.removeItem(idx)}>
             <i className='fas fa-times' />
           </button>
         </li>
@@ -22,13 +22,14 @@ export default class Cart extends Component {
     });
   }
 
-  removeItem(array, deletedItem) {
-    const withoutDeletedItem = this.state.cartItems.filter(
-      item => this.state.cartItems.indexOf(item) !== array.indexOf(deletedItem)
-    );
-    this.setState({ cartItems: withoutDeletedItem });
-    this.props.changeCart(withoutDeletedItem);
-    this.props.decreaseCount(withoutDeletedItem.length);
+  removeItem(idx) {
+    const cartItems = [
+      ...this.state.cartItems.slice(0, idx),
+      ...this.state.cartItems.slice(idx + 1, this.state.cartItems.length)
+    ];
+    this.setState({ cartItems: cartItems });
+    this.props.changeCart(cartItems);
+    this.props.decreaseCount(cartItems.length);
   }
 
   getTotalPrice() {
